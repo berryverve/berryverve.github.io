@@ -1,0 +1,127 @@
+.wrap{
+	font-family: 'Montserrat', sans-serif;
+	min-height: inherit;
+	background: url("../img/beach.jpg") fixed no-repeat center / cover;
+	display: flex;
+	flex-flow: column nowrap;
+	color: #3e3e3e;
+}
+main{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	padding-top: 3vh;
+}
+.card{
+	background: #fff;
+	padding: 25px 10px;
+	border: 1px solid #ccc;
+	border-radius: 13px;
+	width: 280px;
+	overflow: hidden;
+	margin: 10px 15px;
+	position: relative;
+	transition: all .2s;
+	text-align: center;
+}
+.card:hover{
+	transform: translateY(-1px);
+	transition: all .2s;
+	border-color: #2ae0ff;
+}
+.card img{
+	width: 70%;
+	margin: 20px auto;
+	display: block;
+	border-radius: 50%;
+	z-index: 100;
+	padding: 10px;
+	border: 1px dotted #616161;
+}
+.card h2{
+	font-size: 20px;
+	font-weight: 500;
+	color: #6f6f6f;
+	margin: 5px 0;
+}
+.card p{
+	padding: 0 27px;
+	font-size: 14px;
+	color: #8c8c8c;
+	margin: 9px 0;
+}
+.card ul{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.card li{
+	margin: 0 5px;
+}
+.card li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border-radius: 50%;
+	border: 1px solid #b6c5cc;
+	width: 37px;
+	height: 37px;
+	color: #b6c5cc;
+	transition: all .3s;
+}
+.card li a:hover{
+	border-color: transparent;
+	background: #2ae0ff;
+	transition: all .3s;
+}
+.card li a:hover svg path{
+	fill: #fff;
+	transition: all .3s;
+}
+.cover{
+	position: relative;
+}
+.cover:before{
+	content: "";
+	height: 1px;
+	border-bottom: 1px dotted #ccc;
+	position: absolute;
+	top: 50%;
+	width: 12%;
+	left: 0;
+	z-index: 0;
+}
+.cover:after{
+	content: "";
+	height: 1px;
+	border-bottom: 1px dotted #ccc;
+	position: absolute;
+	top: 50%;
+	width: 12%;
+	right: 0;
+	z-index: 0;
+}
+footer{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	color: #e3e3e3;
+	padding: 20px;
+	font-size: 13px;
+}
+footer a{
+	margin: 8px;
+	transition: color .2s;
+}
+footer a:hover{
+	color: #2ae0ff;
+	transition: color .2s;
+}
